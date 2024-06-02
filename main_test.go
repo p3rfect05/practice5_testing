@@ -48,7 +48,7 @@ func TestAddTwoNumbers(t *testing.T) {
 		{x: 11, y: 52323, expected: 52334},
 	}
 	for _, tc := range int_tests {
-		if tc.x+tc.y != tc.expected {
+		if AddTwoNumbers(tc.x, tc.y) != tc.expected {
 			t.Fatalf("Sum of %d + %d is not equal to %d but should be", tc.x, tc.y, tc.expected)
 		}
 	}
